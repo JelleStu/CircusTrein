@@ -14,6 +14,7 @@ namespace Circustrein
         private bool flesheater;
         private string animalnames;
         private Animal smallestAnimal;
+        
 
 
         public Wagon(int _wagonNumber)
@@ -21,6 +22,38 @@ namespace Circustrein
             this.wagonNumber = _wagonNumber;
             AnimalsInWagon = new List<Animal>();
         }
+
+        public void Add(Animal a)
+        {
+            AnimalsInWagon.add(a);
+            size -= a.GetSize();
+        }
+
+        public bool CanAddAnimal(Animal a)
+        {
+            if (size < a.GetSize())
+                return false;
+            return (a is FaggotVegan || a is UberCarnivoor && GetLargestFaggotVegan() > a);
+        }
+
+        private int GetLargestFaggotVegan()
+        {
+            Animal a = AnimalsInWagon.Where(a => a is FaggotVegan).orderby(a.GetSize()).FirstOrDefault();
+            return a == null ? -1 : a.GetSize();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public void addAnimalToWagon(Animal _animal)
         {

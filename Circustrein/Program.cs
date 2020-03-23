@@ -24,6 +24,14 @@ namespace Circustrein
             wagons.AddAnimalToWagon(Eekhoorn);
             wagons.AddAnimalToWagon(Birderspin);
 
+            //wagons.AddAnimalToWagon(Lion);
+            //wagons.AddAnimalToWagon(Giraffe);
+            //wagons.AddAnimalToWagon(Zebra);
+            //wagons.AddAnimalToWagon(Antilope);
+            //wagons.AddAnimalToWagon(GrizzlyBear);
+            //wagons.AddAnimalToWagon(Eekhoorn);
+            //wagons.AddAnimalToWagon(Birderspin);
+
             Console.WriteLine(wagons.ReturnAnimalsFromWagons());
         }
     }

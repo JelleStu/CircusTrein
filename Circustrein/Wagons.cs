@@ -24,120 +24,143 @@ namespace Circustrein
             }
             return returnmessage;
         }
-        public void AddAnimalToWagon(Animal _animal)
-        {
-           Wagon availableWagon = GetAvailableWagon(_animal);
-           if (_animal.IsBigFleshEater() == true)
-           {
-               availableWagon.BigFleshEaterInWagon();
-           }
-           if (_animal.IsHerbivoor() == false)
-           {
-               availableWagon.SetFleshEater();
-           }
-           availableWagon.addAnimalToWagon(_animal);
 
-        }
-
-        public Wagon GetAvailableWagon(Animal _animal)
+        public void AddAnimal(Animal animal)
         {
-            foreach (var wagon in wagonList)
+            Wagon availableWagon = null;
+            foreach(Wagon w in Wagons)
             {
-                if (!wagon.HasBigFleshEater())
+                if (w.CanAddAnimal(animal))
                 {
-                    if (_animal.IsBigFleshEater() != false) continue;
-                    if (_animal.IsHerbivoor() == true)
-                    {
-                        if (wagon.WagonCheckFleshEater() == true && _animal.GetSize() > wagon.SizeFleshEater())
-                        {
-                            if (wagon.ReturnSize() > 0)
-                            {
-                                int wagonspace = wagon.ReturnSize();
-                                wagonspace -=_animal.GetSize();
-                                if (wagonspace > 0)
-                                {
-                                    return wagon;
-                                }
-                                else
-                                {
-                                    continue;
-                                }
-                            }
-                            else
-                            {
-                                continue;
-                            }
-                        }
-                        else if (wagon.WagonCheckFleshEater() == false)
-                        {
-                            if (wagon.ReturnSize() > 0)
-                            {
-                                int wagonspace = wagon.ReturnSize();
-                                wagonspace -= _animal.GetSize();
-                                if (wagonspace > 0)
-                                {
-                                    return wagon;
-                                }
-                                else
-                                {
-                                    continue;
-                                }
-                            }
-                            else
-                            {
-                                continue;
-                            }
-                        }
-                        else
-                        {
-                            continue;
-                        }
-                    }
-                    else
-                    {
-                        if (wagon.WagonCheckFleshEater() == false)
-                        {
-                            if (_animal.GetSize() < wagon.SmallestHerbivor())
-                            {
-                                if (wagon.ReturnSize() > 0)
-                                {
-                                    int wagonspace = wagon.ReturnSize();
-                                    wagonspace -= _animal.GetSize();
-                                    if (wagonspace > 0)
-                                    {
-                                        return wagon;
-                                    }
-                                    else
-                                    {
-                                        continue;
-                                    }
-                                }
-                                else
-                                {
-                                    continue;
-                                }
-                            }
-                            else
-                            {
-                                continue;
-                            }
-                        }
-                        else
-                        {
-                            continue;
-                        }
-                            
-                    }
+                    availableWagon = w;
+                    break;
                 }
-                else
-                {
-                    continue;
-                }
+                w?.add(animal);
             }
-            Wagon newWagon = new Wagon(wagonList.Count + 1);
-            wagonList.Add(newWagon);
-            return newWagon;
         }
 
-    }
+
+
+
+
+
+
+
+
+    //    public void AddAnimalToWagon(Animal _animal)
+    //    {
+    //       Wagon availableWagon = GetAvailableWagon(_animal);
+    //       if (_animal.IsBigFleshEater() == true)
+    //       {
+    //           availableWagon.BigFleshEaterInWagon();
+    //       }
+    //       if (_animal.IsHerbivoor() == false)
+    //       {
+    //           availableWagon.SetFleshEater();
+    //       }
+    //       availableWagon.addAnimalToWagon(_animal);
+
+    //    }
+
+    //    public Wagon GetAvailableWagon(Animal _animal)
+    //    {
+    //        foreach (var wagon in wagonList)
+    //        {
+    //            if (!wagon.HasBigFleshEater())
+    //            {
+    //                if (_animal.IsBigFleshEater() != false) continue;
+    //                if (_animal.IsHerbivoor() == true)
+    //                {
+    //                    if (wagon.WagonCheckFleshEater() == true && _animal.GetSize() > wagon.SizeFleshEater())
+    //                    {
+    //                        if (wagon.ReturnSize() > 0)
+    //                        {
+    //                            int wagonspace = wagon.ReturnSize();
+    //                            wagonspace -=_animal.GetSize();
+    //                            if (wagonspace > 0)
+    //                            {
+    //                                return wagon;
+    //                            }
+    //                            else
+    //                            {
+    //                                continue;
+    //                            }
+    //                        }
+    //                        else
+    //                        {
+    //                            continue;
+    //                        }
+    //                    }
+    //                    else if (wagon.WagonCheckFleshEater() == false)
+    //                    {
+    //                        if (wagon.ReturnSize() > 0)
+    //                        {
+    //                            int wagonspace = wagon.ReturnSize();
+    //                            wagonspace -= _animal.GetSize();
+    //                            if (wagonspace > 0)
+    //                            {
+    //                                return wagon;
+    //                            }
+    //                            else
+    //                            {
+    //                                continue;
+    //                            }
+    //                        }
+    //                        else
+    //                        {
+    //                            continue;
+    //                        }
+    //                    }
+    //                    else
+    //                    {
+    //                        continue;
+    //                    }
+    //                }
+    //                else
+    //                {
+    //                    if (wagon.WagonCheckFleshEater() == false)
+    //                    {
+    //                        if (_animal.GetSize() < wagon.SmallestHerbivor())
+    //                        {
+    //                            if (wagon.ReturnSize() > 0)
+    //                            {
+    //                                int wagonspace = wagon.ReturnSize();
+    //                                wagonspace -= _animal.GetSize();
+    //                                if (wagonspace > 0)
+    //                                {
+    //                                    return wagon;
+    //                                }
+    //                                else
+    //                                {
+    //                                    continue;
+    //                                }
+    //                            }
+    //                            else
+    //                            {
+    //                                continue;
+    //                            }
+    //                        }
+    //                        else
+    //                        {
+    //                            continue;
+    //                        }
+    //                    }
+    //                    else
+    //                    {
+    //                        continue;
+    //                    }
+                            
+    //                }
+    //            }
+    //            else
+    //            {
+    //                continue;
+    //            }
+    //        }
+    //        Wagon newWagon = new Wagon(wagonList.Count + 1);
+    //        wagonList.Add(newWagon);
+    //        return newWagon;
+    //    }
+
+    //}
 }
