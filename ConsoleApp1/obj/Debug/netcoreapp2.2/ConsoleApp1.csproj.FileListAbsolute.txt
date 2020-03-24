@@ -1,0 +1,31 @@
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.deps.json
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.runtimeconfig.json
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.dll
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.pdb
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.AssemblyInfo.cs
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.dll
+C:\Users\User\RiderProjects\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.pdb
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.deps.json
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.runtimeconfig.json
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.dll
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.pdb
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.dll
+C:\Users\Jelle\Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.pdb
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.deps.json
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.runtimeconfig.json
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.runtimeconfig.dev.json
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.dll
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.pdb
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.csprojAssemblyReference.cache
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.AssemblyInfoInputs.cache
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.AssemblyInfo.cs
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.dll
+C:\-Fontys\Fontys 2019-20 2e semester\AlgoritmeOpdrachten\Circustrein\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.pdb
