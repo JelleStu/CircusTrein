@@ -39,7 +39,7 @@ namespace Circustrein
           //  return animals.Any(a => a is Carnivoor);
             foreach (Animal animal in animals)
             {
-                if (animal.GetType() == typeof(Carnivoor))
+                if (animal is Carnivoor)
                 {
                     return true;
                 }
@@ -54,7 +54,7 @@ namespace Circustrein
 //            return largestCarnivoor?.GetSize() ?? -1;
             foreach (Animal animal in animals)
             {
-                if (animal.GetType() == typeof(Carnivoor))
+                if (animal is Carnivoor)
                 {
                     return animal.GetSize();
                 }
@@ -71,11 +71,14 @@ namespace Circustrein
             {
                 if (animal.GetType() == typeof(Herbivoor))
                 {
-                    if (smallestHerbivoor != null && animal.GetSize() < smallestHerbivoor.GetSize())
+                    if (smallestHerbivoor == null)
                     {
                         smallestHerbivoor = animal;
                     }
-                    smallestHerbivoor = animal;
+                    else if (animal.GetSize() < smallestHerbivoor.GetSize())
+                    {
+                        smallestHerbivoor = animal;
+                    }
                 }
             }
             if (smallestHerbivoor != null) return smallestHerbivoor.GetSize();
@@ -92,7 +95,11 @@ namespace Circustrein
         public string AnimalsInWagon()
         {
             StringBuilder sb = new StringBuilder();
-            animals.ForEach(a => sb.Append($"{a.GetName()} "));
+            //animals.ForEach(a => sb.Append($"{a.GetName()} "));
+            foreach (Animal animal in animals)
+            {
+                sb.Append($"{animal.GetName()} ");
+            }
             return sb.ToString();
         }
     }

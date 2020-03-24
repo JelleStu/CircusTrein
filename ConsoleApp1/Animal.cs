@@ -12,6 +12,7 @@ namespace Circustrein
         private readonly int _size;
 
         public Animal(string name, int size)
+
         {
             _name = name;
             _size = size;
