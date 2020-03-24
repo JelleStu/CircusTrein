@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
@@ -25,32 +26,23 @@ namespace Circustrein
 
         public void Add(Animal a)
         {
-            AnimalsInWagon.add(a);
+            AnimalsInWagon.Add(a);
             size -= a.GetSize();
         }
 
         public bool CanAddAnimal(Animal a)
         {
-            if (size < a.GetSize())
-                return false;
-            return (a is FaggotVegan || a is UberCarnivoor && GetLargestFaggotVegan() > a);
+            if (size > a.GetSize())
+                return true;
+            return (a is FaggotVegan || a is UberCarnivoor && GetLargestFaggotVegan() > a.GetSize());
         }
 
         private int GetLargestFaggotVegan()
         {
-            Animal a = AnimalsInWagon.Where(a => a is FaggotVegan).orderby(a.GetSize()).FirstOrDefault();
-            return a == null ? -1 : a.GetSize();
+            Animal a = null;
+            a = AnimalsInWagon.Where(ani => ani is FaggotVegan).OrderBy(ani => ani.size).FirstOrDefault();
+            return a?.GetSize() ?? -1;
         }
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -16,13 +16,13 @@ namespace Circustrein
             Animal Birderspin = new Animal("Vogelspin", 1, false);
             var wagons = new Wagons();
 
-            wagons.AddAnimalToWagon(Lion);
-            wagons.AddAnimalToWagon(Giraffe);
-            wagons.AddAnimalToWagon(Zebra);
-            wagons.AddAnimalToWagon(Antilope);
-            wagons.AddAnimalToWagon(GrizzlyBear);
-            wagons.AddAnimalToWagon(Eekhoorn);
-            wagons.AddAnimalToWagon(Birderspin);
+            wagons.AddAnimal(Lion);
+            wagons.AddAnimal(Giraffe);
+            wagons.AddAnimal(Zebra);
+            wagons.AddAnimal(Antilope);
+            wagons.AddAnimal(GrizzlyBear);
+            wagons.AddAnimal(Eekhoorn);
+            wagons.AddAnimal(Birderspin);
 
             //wagons.AddAnimalToWagon(Lion);
             //wagons.AddAnimalToWagon(Giraffe);

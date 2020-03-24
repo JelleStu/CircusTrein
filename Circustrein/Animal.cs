@@ -6,10 +6,10 @@ using System.Text.RegularExpressions;
 
 namespace Circustrein
 {
-    class Animal
+    public class Animal
     {
         private string name;
-        private int size;
+        public int size;
         private bool herbivoor; //0 = false 1 = true
 
         public Animal(string _name, int _size, bool _herbivoor)
